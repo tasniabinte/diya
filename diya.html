@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personality Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Personality Quiz</h1>
+        <p class="intro">Hi! Answer some questions, and I'll tell you something special! 💕</p>
+        <form id="quiz-form">
+            <div class="question" id="question1">
+                <label>What's your favorite color?</label>
+                <input type="text" name="q1" required>
+            </div>
+            <div class="question" id="question2" style="display: none;">
+                <label>What's your dream vacation destination?</label>
+                <input type="text" name="q2" required>
+            </div>
+            <div class="question" id="question3" style="display: none;">
+                <label>What's your favorite hobby?</label>
+                <input type="text" name="q3" required>
+            </div>
+            <button type="button" id="next-button">Next</button>
+        </form>
+        <div class="result" id="result" style="display: none;">
+            <img src="love-image.jpg" alt="I love you" class="result-image">
+            <h2>I Love You! 💜</h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
